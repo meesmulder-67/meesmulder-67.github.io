@@ -3,55 +3,181 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mijn website</title>
+
 <style>
-body{font-family:Arial;margin:0;background:#eef4f8;color:#222}
-header{background:#173b57;color:white;text-align:center;padding:25px}
-nav{background:#245779;padding:15px;text-align:center}
-nav a,.knop{color:white;padding:12px;text-decoration:none;border:0;background:none;cursor:pointer;font-size:16px}
-nav a:hover,.knop:hover{background:#367da5}
-.dropdown{display:inline-block;position:relative}
-.inhoud{display:none;position:absolute;background:white;min-width:160px;z-index:1}
-.inhoud a{display:block;color:#173b57}
-.dropdown:hover .inhoud,.dropdown:focus-within .inhoud{display:block}
-main{background:white;max-width:800px;margin:30px auto;padding:25px}
+/* De algemene opmaak van de website */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #eef4f8;
+    color: #222;
+}
+
+/* De bovenkant van de website */
+header {
+    background: #173b57;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Het navigatiemenu */
+nav {
+    background: #245779;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a, .knop {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav a:hover, .knop:hover {
+    background: #367da5;
+}
+
+/* Het dropdownmenu */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.inhoud {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 180px;
+    z-index: 1;
+}
+
+.inhoud a {
+    display: block;
+    color: #173b57;
+}
+
+.dropdown:hover .inhoud,
+.dropdown:focus-within .inhoud {
+    display: block;
+}
+
+/* De inhoud van de pagina */
+main {
+    background: white;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+/* De afbeelding op de homepage */
+img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* De website werkt ook op een telefoon */
+@media (max-width: 850px) {
+    main {
+        margin: 15px;
+        padding: 18px;
+    }
+}
 </style>
 </head>
+
 <body>
+
+<!-- Titel en introductie -->
 <header>
-<h1>Mijn website</h1>
-<p>Informatica en de digitale wereld</p>
+    <h1>Mijn website</h1>
+    <p>Informatica en de digitale wereld</p>
 </header>
+
+<!-- Menu waarmee je naar andere pagina's gaat -->
 <nav>
-<a href="index.html">Home</a>
-<div class="dropdown">
-<button class="knop">Onderwerpen ▼</button>
-<div class="inhoud">
-<a href="invoer.html">Invoer, verwerking, uitvoer</a>
-<a href="binair.html">Binair stelsel</a>
-<a href="kleurmodellen.html">Kleurmodellen</a>
-<a href="compressie.html">Compressie</a>
-<a href="ai.html">Kunstmatige intelligentie</a>
-</div>
-</div>
+    <a href="index.html">Home</a>
+
+    <div class="dropdown">
+        <button class="knop">Onderwerpen ▼</button>
+
+        <div class="inhoud">
+            <a href="invoer.html">Invoer, verwerking, uitvoer</a>
+            <a href="binair.html">Binair stelsel</a>
+            <a href="kleurmodellen.html">Kleurmodellen</a>
+            <a href="compressie.html">Compressie</a>
+            <a href="ai.html">Kunstmatige intelligentie</a>
+        </div>
+    </div>
 </nav>
+
+<!-- Persoonlijke informatie -->
 <main>
-<h2>Over mij</h2>
-<p>Hoi! Welkom op mijn website. Ik ben een leerling en maak deze website voor het vak informatica.</p>
-<p>Op deze website vertel ik over verschillende onderwerpen uit de computerwereld. Je leert bijvoorbeeld hoe computers informatie verwerken, hoe kleuren op een scherm werken en wat kunstmatige intelligentie is.</p>
-<p>Klik op het menu om de verschillende onderwerpen te bekijken.</p>
-<h3>Informatica in beeld</h3>
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
-alt="Werken met een computer"
-style="width:100%;max-width:600px;border-radius:10px;">
-<h3>Video over computers</h3>
-<p>Deze video geeft extra uitleg over computers en hoe ze werken.</p>
-<iframe width="100%" height="315"
-src="https://www.youtube.com/embed/DKGZlaPlVLY"
-title="Hoe computers werken"
-style="border:0;border-radius:10px;"
-allowfullscreen></iframe>
+    <h2>Over mij</h2>
+
+    <p>
+        Hoi! Welkom op mijn website. Ik ben een leerling
+        en heb deze website gemaakt voor het vak informatica.
+        Op deze pagina vertel ik iets over mezelf en mijn interesses.
+    </p>
+
+    <h3>School</h3>
+
+    <p>
+        Ik zit op de middelbare school en volg het vak informatica.
+        Bij dit vak leer ik meer over computers, technologie en het
+        maken van websites. Voor deze opdracht leer ik werken met HTML
+        en CSS.
+    </p>
+
+    <h3>Voetbal</h3>
+
+    <p>
+        Een van mijn hobby's is voetbal. Ik speel zelf voetbal en vind
+        het leuk om wedstrijden te spelen en beter te worden.
+        Ook kijk ik graag naar voetbal. Ajax is mijn favoriete club.
+    </p>
+
+    <h3>Gamen</h3>
+
+    <p>
+        In mijn vrije tijd game ik graag. Ik speel onder andere
+        voetbalgames op mijn PlayStation. Ik vind het leuk om mijn
+        team beter te maken en nieuwe spelers te verzamelen.
+    </p>
+
+    <h3>Muziek</h3>
+
+    <p>
+        Ik vind muziek ook leuk. Ik ben geïnteresseerd in verschillende
+        instrumenten, zoals gitaar en piano.
+    </p>
+
+    <h3>Informatica in beeld</h3>
+
+    <img
+        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+        alt="Werken met een computer">
+
+    <h3>Waarom deze website?</h3>
+
+    <p>
+        Op deze website leg ik verschillende onderwerpen uit die
+        met informatica te maken hebben. Je kunt bijvoorbeeld lezen
+        over het binaire stelsel, kleurmodellen, compressie en AI.
+        Klik op het menu om de onderwerpen te bekijken.
+    </p>
 </main>
+
 </body>
 </html>
 ```
