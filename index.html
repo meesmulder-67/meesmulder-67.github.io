@@ -2,43 +2,45 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <style>
-        body { font-family: Arial; margin: 0; background: #eef4f8; }
-        header { background: #173b57; color: white; padding: 25px; text-align: center; }
-        nav { background: #245779; padding: 15px; text-align: center; }
-        nav a, .knop { color: white; padding: 12px; text-decoration: none; border: none; background: none; font-size: 16px; cursor: pointer; }
-        nav a:hover, .knop:hover { background: #367da5; }
-        .dropdown { display: inline-block; position: relative; }
-        .inhoud { display: none; position: absolute; background: white; min-width: 140px; }
-        .inhoud a { display: block; color: #173b57; }
-        .dropdown:hover .inhoud, .dropdown:focus-within .inhoud { display: block; }
-        main { background: white; margin: 30px auto; padding: 25px; max-width: 750px; }
-    </style>
+<meta charset="UTF-8">
+<title>Mijn website</title>
+<style>
+body{font-family:Arial;margin:0;background:#eef4f8;color:#222}
+header{background:#173b57;color:white;text-align:center;padding:25px}
+nav{background:#245779;padding:15px;text-align:center}
+nav a,.knop{color:white;padding:12px;text-decoration:none;border:0;background:none;cursor:pointer;font-size:16px}
+nav a:hover,.knop:hover{background:#367da5}
+.dropdown{display:inline-block;position:relative}
+.inhoud{display:none;position:absolute;background:white;min-width:160px;z-index:1}
+.inhoud a{display:block;color:#173b57}
+.dropdown:hover .inhoud,.dropdown:focus-within .inhoud{display:block}
+main{background:white;max-width:800px;margin:30px auto;padding:25px}
+</style>
 </head>
 <body>
-    <header>
-        <h1>Mijn website</h1>
-        <p>Welkom op mijn website!</p>
-    </header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-            <button class="knop">Pagina's ▼</button>
-            <div class="inhoud">
-                <a href="over.html">Over mij</a>
-                <a href="hobby.html">Hobby's</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-        <h2>Home</h2>
-        <p>Welkom op mijn website. Klik op het menu om de andere pagina's te bekijken.</p>
-    </main>
+<header>
+<h1>Mijn website</h1>
+<p>Informatica en de digitale wereld</p>
+</header>
+<nav>
+<a href="index.html">Home</a>
+<div class="dropdown">
+<button class="knop">Onderwerpen ▼</button>
+<div class="inhoud">
+<a href="invoer.html">Invoer, verwerking, uitvoer</a>
+<a href="binair.html">Binair stelsel</a>
+<a href="kleurmodellen.html">Kleurmodellen</a>
+<a href="compressie.html">Compressie</a>
+<a href="ai.html">Kunstmatige intelligentie</a>
+</div>
+</div>
+</nav>
+<main>
+<h2>Over mij</h2>
+<p>Hoi! Welkom op mijn website. Ik ben een leerling en maak deze website voor het vak informatica.</p>
+<p>Op deze website vertel ik over verschillende onderwerpen uit de computerwereld. Je leert bijvoorbeeld hoe computers informatie verwerken, hoe kleuren op een scherm werken en wat kunstmatige intelligentie is.</p>
+<p>Klik op het menu om de verschillende onderwerpen te bekijken.</p>
+</main>
 </body>
 </html>
 ```
