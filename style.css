@@ -1,0 +1,139 @@
+```css
+/* Algemene opmaak van de website */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #eef4f8;
+    color: #222;
+}
+
+/* De bovenkant van de website */
+header {
+    background: #173b57;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Het navigatiemenu */
+nav {
+    background: #245779;
+    padding: 15px;
+    text-align: center;
+}
+
+/* De links en de knop van het menu */
+nav a,
+.knop {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Kleur wanneer je over het menu beweegt */
+nav a:hover,
+.knop:hover {
+    background: #367da5;
+}
+
+/* Het dropdownmenu */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* De inhoud van het dropdownmenu is eerst verborgen */
+.inhoud {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 180px;
+    z-index: 1;
+    text-align: left;
+}
+
+/* De links in het dropdownmenu */
+.inhoud a {
+    display: block;
+    color: #173b57;
+}
+
+/* Het dropdownmenu verschijnt bij aanwijzen of focussen */
+.dropdown:hover .inhoud,
+.dropdown:focus-within .inhoud {
+    display: block;
+}
+
+/* De inhoud van alle pagina's */
+main {
+    background: white;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+/* Afbeeldingen op de website */
+img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Video's op de website */
+iframe {
+    max-width: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* De link naar Binary Bonanza */
+.spel {
+    display: block;
+    background: #173b57;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* Kleur van het spel wanneer je erover beweegt */
+.spel:hover {
+    background: #367da5;
+}
+
+/* Het rode vak bij RGB */
+.rood {
+    background: #ff0000;
+    color: white;
+    padding: 15px;
+}
+
+/* Het groene vak bij RGB */
+.groen {
+    background: #00aa00;
+    color: white;
+    padding: 15px;
+}
+
+/* Het blauwe vak bij RGB */
+.blauw {
+    background: #0000ff;
+    color: white;
+    padding: 15px;
+}
+
+/* De website past zich aan kleinere schermen aan */
+@media (max-width: 850px) {
+    main {
+        margin: 15px;
+        padding: 18px;
+    }
+}
+```
