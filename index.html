@@ -1,28 +1,44 @@
-
+```html
 <!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Mijn website</title>
+    <title>Home</title>
+    <style>
+        body { font-family: Arial; margin: 0; background: #eef4f8; }
+        header { background: #173b57; color: white; padding: 25px; text-align: center; }
+        nav { background: #245779; padding: 15px; text-align: center; }
+        nav a, .knop { color: white; padding: 12px; text-decoration: none; border: none; background: none; font-size: 16px; cursor: pointer; }
+        nav a:hover, .knop:hover { background: #367da5; }
+        .dropdown { display: inline-block; position: relative; }
+        .inhoud { display: none; position: absolute; background: white; min-width: 140px; }
+        .inhoud a { display: block; color: #173b57; }
+        .dropdown:hover .inhoud, .dropdown:focus-within .inhoud { display: block; }
+        main { background: white; margin: 30px auto; padding: 25px; max-width: 750px; }
+    </style>
 </head>
 <body>
-    <h1>Mijn informatica website</h1>
+    <header>
+        <h1>Mijn website</h1>
+        <p>Welkom op mijn website!</p>
+    </header>
 
-    <details>
-        <summary>Menu ▼</summary>
-        <p><a href="index.html">Home</a></p>
-        <p><a href="invoer.html">Invoer, verwerking en uitvoer</a></p>
-        <p><a href="binair.html">Binair stelsel</a></p>
-        <p><a href="kleuren.html">Kleurmodellen</a></p>
-        <p><a href="compressie.html">Compressie</a></p>
-        <p><a href="ai.html">Kunstmatige intelligentie</a></p>
-        <p><a href="telefoon.html">AI op mijn telefoon</a></p>
-    </details>
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="knop">Pagina's ▼</button>
+            <div class="inhoud">
+                <a href="over.html">Over mij</a>
+                <a href="hobby.html">Hobby's</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-    <h2>Welkom!</h2>
-    <p>Ik ben Mees. Ik houd van voetbal en gamen.</p>
-    <p>Op deze website leg ik onderwerpen van informatica uit.</p>
-
-    <img src="https://placehold.co/300x200" alt="Afbeelding" width="300">
+    <main>
+        <h2>Home</h2>
+        <p>Welkom op mijn website. Klik op het menu om de andere pagina's te bekijken.</p>
+    </main>
 </body>
 </html>
+```
