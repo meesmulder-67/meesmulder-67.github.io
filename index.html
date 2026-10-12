@@ -2,167 +2,81 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mijn website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn website</title>
 
-<style>
-/* De algemene opmaak van de website */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #eef4f8;
-    color: #222;
-}
-
-/* De bovenkant van de website */
-header {
-    background: #173b57;
-    color: white;
-    text-align: center;
-    padding: 25px;
-}
-
-/* Het navigatiemenu */
-nav {
-    background: #245779;
-    padding: 15px;
-    text-align: center;
-}
-
-nav a, .knop {
-    color: white;
-    padding: 12px;
-    text-decoration: none;
-    border: 0;
-    background: none;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-nav a:hover, .knop:hover {
-    background: #367da5;
-}
-
-/* Het dropdownmenu */
-.dropdown {
-    display: inline-block;
-    position: relative;
-}
-
-.inhoud {
-    display: none;
-    position: absolute;
-    background: white;
-    min-width: 180px;
-    z-index: 1;
-}
-
-.inhoud a {
-    display: block;
-    color: #173b57;
-}
-
-.dropdown:hover .inhoud,
-.dropdown:focus-within .inhoud {
-    display: block;
-}
-
-/* De inhoud van de pagina */
-main {
-    background: white;
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 25px;
-    border-radius: 10px;
-    line-height: 1.6;
-}
-
-/* De afbeelding op de homepage */
-img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-}
-
-/* De website werkt ook op een telefoon */
-@media (max-width: 850px) {
-    main {
-        margin: 15px;
-        padding: 18px;
-    }
-}
-</style>
+    <!-- Het losse CSS-bestand koppelen -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- Titel en introductie -->
-<header>
-    <h1>Mijn website</h1>
-    <p>Informatica en de digitale wereld</p>
-</header>
+    <!-- Titel en introductie -->
+    <header>
+        <h1>Mijn website</h1>
+        <p>Informatica en de digitale wereld</p>
+    </header>
 
-<!-- Menu waarmee je naar andere pagina's gaat -->
-<nav>
-    <a href="index.html">Home</a>
+    <!-- Menu waarmee je naar andere pagina's gaat -->
+    <nav>
+        <a href="index.html">Home</a>
 
-    <div class="dropdown">
-        <button class="knop">Onderwerpen ▼</button>
+        <div class="dropdown">
+            <button class="knop">Onderwerpen ▼</button>
 
-        <div class="inhoud">
-            <a href="invoer.html">Invoer, verwerking, uitvoer</a>
-            <a href="binair.html">Binair stelsel</a>
-            <a href="kleurmodellen.html">Kleurmodellen</a>
-            <a href="compressie.html">Compressie</a>
-            <a href="ai.html">Kunstmatige intelligentie</a>
+            <div class="inhoud">
+                <a href="invoer.html">Invoer, verwerking, uitvoer</a>
+                <a href="binair.html">Binair stelsel</a>
+                <a href="kleurmodellen.html">Kleurmodellen</a>
+                <a href="compressie.html">Compressie</a>
+                <a href="ai.html">Kunstmatige intelligentie</a>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<!-- Persoonlijke informatie -->
-<main>
-    <h2>Over mij</h2>
+    <!-- Persoonlijke informatie -->
+    <main>
+        <h2>Over mij</h2>
 
-    <p>
-        Hoi! Welkom op mijn website. Ik ben een leerling
-        in havo 4 en heb deze website gemaakt voor het vak informatica.
-        Op deze pagina vertel ik iets over mezelf.
-    </p>
+        <p>
+            Hoi! Welkom op mijn website. Ik ben een leerling
+            in havo 4 en heb deze website gemaakt voor het vak informatica.
+            Op deze pagina vertel ik iets over mezelf.
+        </p>
 
-    <h3>School</h3>
+        <h3>School</h3>
 
-    <p>
-        Ik zit op de middelbare school en volg het vak informatica.
-        Bij dit vak leer ik meer over computers, technologie en het
-        maken van websites. Voor deze opdracht moet ik leren werken met HTML
-        en CSS.
-    </p>
+        <p>
+            Ik zit op de middelbare school en volg het vak informatica.
+            Bij dit vak leer ik meer over computers, technologie en het
+            maken van websites. Voor deze opdracht moet ik leren werken met HTML
+            en CSS.
+        </p>
 
-    <h3>Voetbal</h3>
+        <h3>Voetbal</h3>
 
-    <p>
-        Een van mijn hobby's is voetbal. Ik speel zelf voetbal en vind
-        het leuk om wedstrijden te spelen en beter te worden.
-        Ook kijk ik graag naar voetbal. Ajax is mijn favoriete club.
-    </p>
+        <p>
+            Een van mijn hobby's is voetbal. Ik speel zelf voetbal en vind
+            het leuk om wedstrijden te spelen en beter te worden.
+            Ook kijk ik graag naar voetbal. Ajax is mijn favoriete club.
+        </p>
 
-    <h3>Muziek</h3>
+        <h3>Muziek</h3>
 
-    <p>
-        Ik vind muziek ook leuk. Ik ben geïnteresseerd in verschillende
-        instrumenten, zoals gitaar en piano.
-    </p>
+        <p>
+            Ik vind muziek ook leuk. Ik ben geïnteresseerd in verschillende
+            instrumenten, zoals gitaar en piano.
+        </p>
 
+        <h3>Waarom deze website?</h3>
 
-    <h3>Waarom deze website?</h3>
-
-    <p>
-        Op deze website leg ik verschillende onderwerpen uit die
-        met informatica te maken hebben. Je kunt bijvoorbeeld lezen
-        over het binaire stelsel, kleurmodellen, compressie en Kunstmatige Intelligentie (AI).
-    </p>
-</main>
+        <p>
+            Op deze website leg ik verschillende onderwerpen uit die
+            met informatica te maken hebben. Je kunt bijvoorbeeld lezen
+            over het binaire stelsel, kleurmodellen, compressie en Kunstmatige Intelligentie (AI).
+        </p>
+    </main>
 
 </body>
 </html>
