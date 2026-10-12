@@ -1,0 +1,48 @@
+```html
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>Kleurmodellen</title>
+<style>
+body{font-family:Arial;margin:0;background:#eef4f8}
+header{background:#173b57;color:white;text-align:center;padding:25px}
+nav{background:#245779;padding:15px;text-align:center}
+nav a,.knop{color:white;padding:12px;text-decoration:none;border:0;background:none;cursor:pointer;font-size:16px}
+nav a:hover,.knop:hover{background:#367da5}
+.dropdown{display:inline-block;position:relative}
+.inhoud{display:none;position:absolute;background:white;min-width:160px;z-index:1}
+.inhoud a{display:block;color:#173b57}
+.dropdown:hover .inhoud,.dropdown:focus-within .inhoud{display:block}
+main{background:white;max-width:800px;margin:30px auto;padding:25px}
+</style>
+</head>
+<body>
+<header><h1>Kleurmodellen</h1></header>
+<nav>
+<a href="index.html">Home</a>
+<div class="dropdown"><button class="knop">Onderwerpen ▼</button>
+<div class="inhoud">
+<a href="invoer.html">Invoer, verwerking, uitvoer</a>
+<a href="binair.html">Binair stelsel</a>
+<a href="kleurmodellen.html">Kleurmodellen</a>
+<a href="compressie.html">Compressie</a>
+<a href="ai.html">Kunstmatige intelligentie</a>
+</div></div>
+</nav>
+<main>
+<h2>Hoe werken digitale kleuren?</h2>
+<p>Computers en printers gebruiken verschillende kleurmodellen. Twee bekende modellen zijn RGB en CMYK.</p>
+<h3>RGB</h3>
+<p>RGB staat voor rood, groen en blauw. Een beeldscherm combineert deze drie kleuren met verschillende lichtsterktes om andere kleuren te maken. Als alle drie maximaal aanstaan, krijg je wit.</p>
+<div style="background:#ff0000;color:white;padding:15px">Rood</div>
+<div style="background:#00aa00;color:white;padding:15px">Groen</div>
+<div style="background:#0000ff;color:white;padding:15px">Blauw</div>
+<h3>CMYK</h3>
+<p>CMYK staat voor cyaan, magenta, geel en zwart. Dit model wordt vooral gebruikt bij het printen. De kleuren worden met inkt op papier aangebracht.</p>
+<h3>Het verschil</h3>
+<p>RGB werkt met licht en wordt gebruikt voor schermen. CMYK werkt met inkt en wordt gebruikt voor drukwerk.</p>
+</main>
+</body>
+</html>
+```
