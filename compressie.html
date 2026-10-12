@@ -2,58 +2,75 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<title>Compressie</title>
-<style>
-body{font-family:Arial;margin:0;background:#eef4f8}
-header{background:#173b57;color:white;text-align:center;padding:25px}
-nav{background:#245779;padding:15px;text-align:center}
-nav a,.knop{color:white;padding:12px;text-decoration:none;border:0;background:none;cursor:pointer;font-size:16px}
-nav a:hover,.knop:hover{background:#367da5}
-.dropdown{display:inline-block;position:relative}
-.inhoud{display:none;position:absolute;background:white;min-width:160px;z-index:1}
-.inhoud a{display:block;color:#173b57}
-.dropdown:hover .inhoud,.dropdown:focus-within .inhoud{display:block}
-main{background:white;max-width:800px;margin:30px auto;padding:25px}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compressie</title>
 </head>
+
 <body>
-<header><h1>Compressie: bitmap en vector</h1></header>
-<nav>
-<a href="index.html">Home</a>
-<div class="dropdown"><button class="knop">Onderwerpen ▼</button>
-<div class="inhoud">
-<a href="invoer.html">Invoer, verwerking, uitvoer</a>
-<a href="binair.html">Binair stelsel</a>
-<a href="kleurmodellen.html">Kleurmodellen</a>
-<a href="compressie.html">Compressie</a>
-<a href="ai.html">Kunstmatige intelligentie</a>
-</div></div>
-</nav>
-<main>
-<h2>Wat is compressie?</h2>
-<p>Compressie is het kleiner maken van een bestand, zodat het minder opslagruimte inneemt of sneller verstuurd kan worden.</p>
-<h3>Bitmap</h3>
-<p>Een bitmapafbeelding bestaat uit pixels. Foto's zijn vaak bitmaps. Als je een bitmap sterk vergroot, kun je de losse pixels zien.</p>
-<h3>Vector</h3>
-<p>Een vectorafbeelding bestaat uit lijnen, punten en vormen die met wiskundige beschrijvingen worden opgeslagen. Daardoor kun je een vectorlogo vergroten zonder dat de randen wazig worden.</p>
-<h3>Het verschil</h3>
-<p>Bitmaps zijn handig voor foto's. Vectoren zijn handig voor logo's, pictogrammen en illustraties.</p>
-<h3>Bestanden kleiner maken</h3>
-<p>Bij verliesloze compressie blijft alle oorspronkelijke informatie behouden. Bij compressie met verlies wordt een deel van de informatie verwijderd om het bestand kleiner te maken.</p>
-<h3>Digitale afbeeldingen</h3>
-<img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=800&q=80"
-alt="Digitale illustratie op een scherm"
-style="width:100%;max-width:600px;border-radius:10px;">
-<h3>Video over bitmap en vector</h3>
-<p>Deze video laat zien wat het verschil is tussen pixelafbeeldingen en vectorafbeeldingen.</p>
-<iframe width="100%" height="315"
-src="https://www.youtube.com/embed/VIDEO_ID"
-title="Bitmap en vector uitgelegd"
-style="border:0;border-radius:10px;"
-allowfullscreen></iframe>
-<p>Vervang VIDEO_ID door het ID van een geschikte video die je zelf hebt bekeken.</p>
-</main>
+
+    <header>
+        <h1>Compressie: bitmap en vector</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+            <button class="knop">Onderwerpen ▼</button>
+
+            <div class="inhoud">
+                <a href="invoer.html">Invoer, verwerking, uitvoer</a>
+                <a href="binair.html">Binair stelsel</a>
+                <a href="kleurmodellen.html">Kleurmodellen</a>
+                <a href="compressie.html">Compressie</a>
+                <a href="ai.html">Kunstmatige intelligentie</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h2>Wat is compressie?</h2>
+
+        <p>Compressie is het kleiner maken van een bestand, zodat het minder opslagruimte inneemt of sneller verstuurd kan worden.</p>
+
+        <h3>Bitmap</h3>
+
+        <p>Een bitmapafbeelding bestaat uit pixels. Foto's zijn vaak bitmaps. Als je een bitmap sterk vergroot, kun je de losse pixels zien.</p>
+
+        <h3>Vector</h3>
+
+        <p>Een vectorafbeelding bestaat uit lijnen, punten en vormen die met wiskundige beschrijvingen worden opgeslagen. Daardoor kun je een vectorlogo vergroten zonder dat de randen wazig worden.</p>
+
+        <h3>Het verschil</h3>
+
+        <p>Bitmaps zijn handig voor foto's. Vectoren zijn handig voor logo's, pictogrammen en illustraties.</p>
+
+        <h3>Bestanden kleiner maken</h3>
+
+        <p>Bij verliesloze compressie blijft alle oorspronkelijke informatie behouden. Bij compressie met verlies wordt een deel van de informatie verwijderd om het bestand kleiner te maken.</p>
+
+        <h3>Digitale afbeeldingen</h3>
+
+        <img
+            src="https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=800&q=80"
+            alt="Digitale illustratie op een scherm">
+
+        <h3>Video over bitmap en vector</h3>
+
+        <p>Deze video laat zien wat het verschil is tussen pixelafbeeldingen en vectorafbeeldingen.</p>
+
+        <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            title="Bitmap en vector uitgelegd"
+            allowfullscreen>
+        </iframe>
+
+        <p>Vervang VIDEO_ID door het ID van een geschikte video die je zelf hebt bekeken.</p>
+    </main>
+
 </body>
 </html>
 ```
